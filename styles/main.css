@@ -15,7 +15,7 @@ section {
 
 header {
   background-color: #24234c;
-  color: white;
+  color: #f5bdd1;
   padding: 2em;
   position: relative;
 
@@ -30,6 +30,10 @@ header::after{
   left: 50%;
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
   background-color: #24234c;
+}
+
+h2{
+  color: #f5bdd1;
 }
 
 @media (max-width: 1095px) {
@@ -52,7 +56,7 @@ header::after{
   font-size: 4em;
   text-align: center;
   font-family: 'Orbitron', sans-serif;
-  color: red;
+  color: #f5bdd1;
   text-shadow: 2px 2px 4px blue;
 }
 
