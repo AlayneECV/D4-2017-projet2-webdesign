@@ -9,8 +9,8 @@ body {
 }
 
 section {
-  max-width: 46em;
-  margin: 0 auto;
+/*  max-width: 46em;
+  margin: 0 auto; */
 }
 
 header {
@@ -32,8 +32,36 @@ header::after{
   background-color: #24234c;
 }
 
+nav {
+  float: right;
+min-width: 100px;
+min-height: 50px;
+position: absolute;
+right: 0;
+top: 0;
+margin: 20px 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f5bdd1;
+font-family: 'Anton', sans-serif;
+font-size: 20px;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
 h2{
   color: #f5bdd1;
+  text-align: center;
+  margin : 0 auto;
 }
 
 @media (max-width: 1095px) {
@@ -44,7 +72,7 @@ h2{
   }
 }
 
-.nastyadvert {
+#nastyadvert {
   background-image: url(img4.jpg);
   min-height: 90vh;
   background-size: cover;
@@ -52,7 +80,8 @@ h2{
   position: relative;
 }
 
-.nastyadvert h1 {
+#nastyadvert h1 {
+  width : 600px;
   font-size: 4em;
   text-align: center;
   font-family: 'Orbitron', sans-serif;
@@ -60,7 +89,7 @@ h2{
   text-shadow: 2px 2px 4px blue;
 }
 
-.nastyadvert .container {
+#nastyadvert .container {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -72,6 +101,7 @@ footer{
   background-color: black;
   color: white;
   padding: 2em;
+  text-decoration: none;
 
 }
 
@@ -84,8 +114,13 @@ footer{
 }
 
 .linklist a {
-  color: #fff;
   font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.linklist a:hover {
+  color: yellow;
 
 }
 
@@ -95,7 +130,7 @@ footer{
   margin: 15px;
 }
 
-.mywork {
+#mywork {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -141,20 +176,24 @@ footer{
         grid-row: 2;
     }
 
+#bio {
 
-
-h6 {
-  display:table-cell;
-  width:130px;
-  padding:10px;
 }
 
-:first-child {
+#bio-content {
+
+  max-width: 960px;
+  margin : 0 auto;
+  display: flex;
+}
+
+#bio-content p {
+  max-width: 320px;
+  margin : 15px;
+  text-align: justify;
+}
+
+
+#bio-centent p:first-child {
   text-align:justify
-}
-:first-child + h6 {
-  text-align:justify
-}
-h6+h6+h6 {
-  vertical-align:bottom
 }
